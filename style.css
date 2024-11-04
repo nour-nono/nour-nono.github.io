@@ -1,0 +1,63 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root {
+    --bg-primary: #081b29;
+    --secondary: #8892b0;
+    --accent: #00abf0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-primary);
+    margin: 0;
+}
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 10px;
+}
+/* Header Styles */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.logo {
+    color: var(--accent);
+    font-size: 2rem;
+}
+nav {
+    display: flex;
+    gap: .4rem;
+}
+nav a {
+    margin: 0 10px;
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+}
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--secondary);
+    text-align: center;
+}
