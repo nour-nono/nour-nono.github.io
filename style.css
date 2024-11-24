@@ -158,28 +158,55 @@ nav {
     font-size: 1.1rem;
 }
 
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
     text-align: center;
+    padding: 0 20px;
 }
 
 .skill {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--accent-color);
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skill:hover {
     transform: translateY(-5px);
+    background-color: var(--accent-color-hover);
 }
 
 .skill i {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
+}
+
+.skill p {
+    font-size: 1.2rem;
+    color: #333;
 }
 
 /* Projects Section */
@@ -337,7 +364,7 @@ footer {
     }
 
     .nav-links li {
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     .burger {

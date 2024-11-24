@@ -32,7 +32,12 @@ const typeWriter = () => {
         if (i < text.length) {
             element.textContent += text.charAt(i);
             i++;
-            setTimeout(typing, 100);
+            i==text.length? setTimeout(typing, 1000):setTimeout(typing, 100);
+        }
+        else {
+            i = 0;
+            element.textContent = 'I\'m a ';
+            setTimeout(typing, 100)
         }
     }
 
